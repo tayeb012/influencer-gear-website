@@ -1,0 +1,20 @@
+@media screen and (max-width:870px) {
+    header {
+        padding: clamp(1.875rem, -1.7797rem + 10.1695vw, 3.75rem) clamp(2.5rem, -2.3729rem + 13.5593vw, 5rem);
+    }
+
+    nav>.list-itm>ul>li{
+        margin-left:clamp(0.3125rem, -1.5148rem + 5.0847vw, 1.25rem);
+    }
+}
+
+@media screen and (max-width:700px) {
+    nav>.list-itm>ul{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+        
+    }
+}
+
