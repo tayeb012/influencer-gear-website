@@ -4,7 +4,7 @@
     }
 
     nav>.list-itm>ul>li{
-        margin-left:clamp(0.3125rem, -1.5148rem + 5.0847vw, 1.25rem);
+        margin-right:clamp(0.3125rem, -1.5148rem + 5.0847vw, 1.25rem);
     }
 }
 
@@ -13,8 +13,31 @@
         display: none;
     }
     .nav-icon{
-        display: block;
-        
+        display: block; 
     }
+    .cart-shopping{
+        
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+/* for mobile decice */
+@media screen and (max-width:575px){
+    nav{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-icon{
+        position: absolute;
+        left: 0;
+    }
+    /* .cart-shopping{
+        display: block;
+        margin: 0;
+        position: absolute;
+
+    } */
 }
 

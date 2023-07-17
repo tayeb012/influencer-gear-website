@@ -32,7 +32,8 @@ nav>.list-itm>ul {
 
 nav>.list-itm>ul>li {
     display: inline;
-    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 15px;
 }
 
 .nav-icon{
