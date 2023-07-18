@@ -1,3 +1,11 @@
+@media screen and (max-width:1000px) {
+    .popular-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
 @media screen and (max-width:870px) {
     header {
         padding: clamp(1.875rem, -1.7797rem + 10.1695vw, 3.75rem) clamp(2.5rem, -2.3729rem + 13.5593vw, 5rem);
@@ -7,7 +15,7 @@
         margin-right: clamp(0.3125rem, -1.5148rem + 5.0847vw, 1.25rem);
     }
 
-    .web{
+    .web {
         display: inline;
     }
 }
@@ -52,7 +60,7 @@
         padding: 20px 30px;
     }
 
-    .nav-icon-mobile{
+    .nav-icon-mobile {
         display: block;
     }
 
@@ -76,13 +84,6 @@
         margin: 0;
     }
 
-    /* .cart-shopping{
-        display: block;
-       
-        position: absolute;
-
-    } */
-
     nav>h1 {
         font-size: clamp(0.9375rem, 0.7136rem + 1.4925vw, 1.25rem);
     }
@@ -90,27 +91,50 @@
 
     /* start header section part */
 
-    .your-Journey-dtl>h1{
+    .your-Journey-dtl>h1 {
         font-size: clamp(1.875rem, 1.2034rem + 4.4776vw, 2.8125rem);
     }
-    .Journey-dtl-text{
+
+    .Journey-dtl-text {
         font-size: clamp(0.625rem, 0.3563rem + 1.791vw, 1rem);
-        
+
     }
 
     .Journey-dtl-btn {
         width: clamp(8rem, 6.5672rem + 9.5522vw, 10rem);
-        height:clamp(2rem, 1.6418rem + 2.3881vw, 2.5rem);
+        height: clamp(2rem, 1.6418rem + 2.3881vw, 2.5rem);
     }
 
 
     .your-Journey-pic {
-        height:clamp(12rem, 2.6866rem + 62.0896vw, 25rem);
+        height: clamp(12rem, 2.6866rem + 62.0896vw, 25rem);
         width: clamp(12rem, 2.6866rem + 62.0896vw, 25rem);
     }
 
-    .your-Journey-pic > img{
+    .your-Journey-pic>img {
         height: clamp(10rem, 6.4179rem + 23.8806vw, 15rem);
         width: clamp(10rem, 6.4179rem + 23.8806vw, 15rem);
+    }
+
+
+    /* header part end */
+
+    /* main part start */
+
+    /* 1st section of main */
+
+
+    .Popular-Collection{
+        padding:clamp(0.5rem, 0.1364rem + 2.4242vw, 1rem) clamp(1rem, -0.4545rem + 9.697vw, 3rem);
+    }
+
+    .popular-product {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product>h3 {
+        font-size: clamp(1.25rem, 1.0227rem + 1.5152vw, 1.5625rem);
     }
 }

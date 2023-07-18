@@ -154,7 +154,7 @@ nav>.list-itm>ul>li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 180px;
+    padding: 0 clamp(3.75rem, -3.0357rem + 19.0476vw, 11.25rem);
 }
 
 .Popular-ttl {
@@ -180,7 +180,7 @@ nav>.list-itm>ul>li {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .product:hover{
@@ -197,14 +197,14 @@ nav>.list-itm>ul>li {
 .product>h4 {
     color: rgba(0, 0, 0, 0.87);
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.7738rem + 0.6349vw, 1.25rem);
     font-weight: 400;
 }
 
 .product>p {
     color: var(--gray-50, #787885);
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: clamp(0.6875rem, 0.5179rem + 0.4762vw, 0.875rem);
     font-style: normal;
     font-weight: 700;
     line-height: 143%;
