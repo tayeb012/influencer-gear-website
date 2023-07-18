@@ -3,41 +3,114 @@
         padding: clamp(1.875rem, -1.7797rem + 10.1695vw, 3.75rem) clamp(2.5rem, -2.3729rem + 13.5593vw, 5rem);
     }
 
-    nav>.list-itm>ul>li{
-        margin-right:clamp(0.3125rem, -1.5148rem + 5.0847vw, 1.25rem);
+    nav>.list-itm>ul>li {
+        margin-right: clamp(0.3125rem, -1.5148rem + 5.0847vw, 1.25rem);
+    }
+
+    .web{
+        display: inline;
     }
 }
 
-@media screen and (max-width:700px) {
-    nav>.list-itm>ul{
+@media screen and (max-width:730px) {
+    nav>.list-itm>ul {
         display: none;
     }
-    .nav-icon{
-        display: block; 
+
+    .nav-icon {
+        display: block;
     }
-    .cart-shopping{
-        
+
+    .cart-shopping {
         font-size: 2rem;
         margin-right: 2rem;
     }
+
+    /* start header section part */
+
+    .header-your-Journey {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .your-Journey-dtl {
+        width: 100%;
+    }
 }
 
+
+
 /* for mobile decice */
-@media screen and (max-width:575px){
-    nav{
-        position: relative;
+@media screen and (max-width:575px) {
+    header {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px 30px;
     }
-    .nav-icon{
+
+    .nav-icon-mobile{
+        display: block;
+    }
+
+    nav {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .nav-icon {
+        display: none;
         position: absolute;
         left: 0;
+        font-size: clamp(1.2rem, 0.6269rem + 3.8209vw, 2rem);
+
     }
+
+    .cart-shopping {
+        font-size: clamp(1.2rem, 0.6269rem + 3.8209vw, 2rem);
+        margin: 0;
+    }
+
     /* .cart-shopping{
         display: block;
-        margin: 0;
+       
         position: absolute;
 
     } */
-}
 
+    nav>h1 {
+        font-size: clamp(0.9375rem, 0.7136rem + 1.4925vw, 1.25rem);
+    }
+
+
+    /* start header section part */
+
+    .your-Journey-dtl>h1{
+        font-size: clamp(1.875rem, 1.2034rem + 4.4776vw, 2.8125rem);
+    }
+    .Journey-dtl-text{
+        font-size: clamp(0.625rem, 0.3563rem + 1.791vw, 1rem);
+        
+    }
+
+    .Journey-dtl-btn {
+        width: clamp(8rem, 6.5672rem + 9.5522vw, 10rem);
+        height:clamp(2rem, 1.6418rem + 2.3881vw, 2.5rem);
+    }
+
+
+    .your-Journey-pic {
+        height:clamp(12rem, 2.6866rem + 62.0896vw, 25rem);
+        width: clamp(12rem, 2.6866rem + 62.0896vw, 25rem);
+    }
+
+    .your-Journey-pic > img{
+        height: clamp(10rem, 6.4179rem + 23.8806vw, 15rem);
+        width: clamp(10rem, 6.4179rem + 23.8806vw, 15rem);
+    }
+}
